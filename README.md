@@ -20,5 +20,7 @@
 
 └Label : 추론해야 하는 Label 값
 
+#### Data
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a84a908-a367-4ac2-8e97-9f04f8dddf69/Untitled.png)
+![Data](https://user-images.githubusercontent.com/76906638/156130464-44487242-1e98-4eb3-8c40-ace6a9ca9ed2.png)
+
