@@ -53,3 +53,46 @@
     - ~~하지만 저거 이후로 지금 성능을 못내고있음 ..~~
 - 향후 전처리 관련 내용 더 추가 ..
 - KorNLI KorSTS (추가 데이터 활용 방안)
+
+### 성능을 높일 수 있는 방안은 무엇?
+
+[모델을 앙상블한다] 
+
+KoBERT, KoELECTRA, roBERTa-large, KoGPT 등 여러 모델의 결과들를 앙상블
+
+- 경진대회 앙상블 기법
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4657a920-51a6-43d3-9ebe-b040afd6753b/Untitled.png)
+    
+
+[데이터를 늘린다]
+
+- Back translation : 한국어 → 영어 → 한국어
+    
+    파파고→ 5000개 기준 3시간 소요
+    
+    [크롤링 되지 않는 문장들 & 번역 후 premise = hypothesis인것들 다 drop시킴](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96af2e8e-5aa3-495f-b6b9-fd38b6f1e61c/papago_train_final_drop_same.csv)
+    
+    크롤링 되지 않는 문장들 & 번역 후 premise = hypothesis인것들 다 drop시킴
+    
+    참고 : [https://dacon.io/competitions/official/235747/codeshare/3054?page=1&dtype=recent](https://dacon.io/competitions/official/235747/codeshare/3054?page=1&dtype=recent)
+    
+- Kakao brain에서 공개한 KorNLI 데이터셋 추가 (55만 개)
+    
+    [KorNLUDatasets/KorNLI at master · kakaobrain/KorNLUDatasets](https://github.com/kakaobrain/KorNLUDatasets/tree/master/KorNLI)
+    
+    여기서 이 대회 train 문장들과 유사도가 높은 문장들만 추려서 사용하는것은 어떤지?
+    
+    [Google Colaboratory](https://colab.research.google.com/github/Huffon/klue-transformers-tutorial/blob/master/sentence_transformers.ipynb#scrollTo=cad90326-2557-4b86-a42a-ca5033a09cfd)
+    
+    - Sentence BERT Code
+
+[하이퍼 파라미터를 조정한다]
+
+Tokenizer 길이 205(70으로 되어있음)으로 맞췄는지?
+
+- Text_sum Length
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ea2a0ef-3c44-4b89-b653-b54d58b03cdd/Untitled.png)
+    
+- Learning rate , Optimizer , loss
