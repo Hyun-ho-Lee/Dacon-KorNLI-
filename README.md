@@ -42,3 +42,14 @@
     [full_train.csv](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/759345ac-633b-4cdd-8ed2-6c51471b5804/full_train.csv)
     
     - full_train의 경우 578430 row ..too many man...
+## Preprocess (데이터 전처리관련)
+
+- 문장별 최소 최대 그리고 평균길이 관련한 EDA
+    - [https://dacon.io/competitions/official/235875/codeshare/4387?page=1&dtype=recent](https://dacon.io/competitions/official/235875/codeshare/4387?page=1&dtype=recent)
+
+
+
+- ~~KOELECTRA ( BATCH SIZE = 128 , EPOCH = 4 , Warm_up_ratio =1) 기준 비교 결과 특수문자 제거하고 돌리니까 성능이 미약하게 상승함~~
+    - ~~하지만 저거 이후로 지금 성능을 못내고있음 ..~~
+- 향후 전처리 관련 내용 더 추가 ..
+- KorNLI KorSTS (추가 데이터 활용 방안)
