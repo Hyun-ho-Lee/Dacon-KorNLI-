@@ -33,7 +33,7 @@
     - KLUE Offical Dev Set에서 Dacon Test Set 중복만 제거하고 사용가능하다는 답변을 받음 따라서 Train Dataset 에 추가하여 학습진행 가능
     - [https://klue-benchmark.com/tasks/68/data/download](https://klue-benchmark.com/tasks/68/data/download)
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df380a19-234e-4a2d-9da8-a562b1e15ab9/Untitled.png)
+    ![KLUE_DEV](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df380a19-234e-4a2d-9da8-a562b1e15ab9/Untitled.png)
     
     - klue-nli-v1.1_dev.json DataFrame  , Dacon Test 와 결합 후 중복문장 제거한다음 test 부분만 잘라서 train에 결합시키기
     
