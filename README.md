@@ -62,7 +62,7 @@ KoBERT, KoELECTRA, roBERTa-large, KoGPT 등 여러 모델의 결과들를 앙상
 
 - 경진대회 앙상블 기법
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4657a920-51a6-43d3-9ebe-b040afd6753b/Untitled.png)
+    ![Ang](https://user-images.githubusercontent.com/76906638/156131164-899ead9f-cd48-487f-8820-d423cc25b685.png)
     
 
 [데이터를 늘린다]
@@ -93,6 +93,6 @@ Tokenizer 길이 205(70으로 되어있음)으로 맞췄는지?
 
 - Text_sum Length
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ea2a0ef-3c44-4b89-b653-b54d58b03cdd/Untitled.png)
+    ![Length](https://user-images.githubusercontent.com/76906638/156131236-6c33879d-6d44-42d4-9cf0-904f764fa4da.png)
     
 - Learning rate , Optimizer , loss
