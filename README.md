@@ -55,7 +55,7 @@
 - KorNLI KorSTS (추가 데이터 활용 방안)
 
 
-###Run 
+#### Run 
     python3 main.py
 
 ### 성능을 높일 수 있는 방안은 무엇?
