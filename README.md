@@ -2,6 +2,18 @@
 ## 월간데이콘 한국어 문장 분류 경진 대회[https://dacon.io/competitions/official/235875/overview/description] 
 **1. train_data.csv**
 
+
+## Requirements
+- python >= 3.7
+- pytorch >= 1.10
+- transformers == 4.19.2
+- nltk
+- tqdm
+- numpy
+- pandas
+
+
+
 ├ Index : train data index
 
 ├ Premise : 실제 Text
